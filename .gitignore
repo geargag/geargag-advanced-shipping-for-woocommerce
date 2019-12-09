@@ -1,0 +1,16 @@
+node_modules/
+vendor/
+docs/
+dist/
+.env
+wp-cli.local.yml
+
+#IDEA
+.idea/workspace.xml
+.idea/jsLinters/jshint.xml
+
+#PLUGIN
+/src/plugin/vendor/
+/src/plugin/languages/
+/src/plugin/assets/js/dist
+/src/plugin/assets/css
