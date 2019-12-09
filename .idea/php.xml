@@ -9,9 +9,7 @@
     <include_path>
       <path value="$WORDPRESS$" />
       <path value="$KINT$" />
-      <path value="$PROJECT_DIR$/src/plugin/vendor/mnsami/composer-custom-directory-installer" />
-      <path value="$PROJECT_DIR$/src/plugin/vendor/composer" />
-      <path value="$PROJECT_DIR$/src/plugin/vendor/a5hleyrich/wp-background-processing" />
+      <path value="$SITES$/geargag.local/wp-content/plugins/woocommerce" />
     </include_path>
   </component>
   <component name="PhpRuntimeConfiguration" default_stubs_path="$STUBS$">
@@ -24,7 +22,6 @@
       <extension name="ZendUtils" enabled="false" />
       <extension name="amqp" enabled="false" />
       <extension name="apache" enabled="false" />
-      <extension name="apc" enabled="false" />
       <extension name="apcu" enabled="false" />
       <extension name="couchbase" enabled="false" />
       <extension name="cubrid" enabled="false" />
@@ -96,7 +93,7 @@
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
-      <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
     </phpunit_settings>
   </component>
 </project>

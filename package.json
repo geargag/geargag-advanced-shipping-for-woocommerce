@@ -14,13 +14,14 @@
         "lastTranslator": "Vu Nam Hung <vunamhung@gmail.com>"
     },
     "plugin": {
-        "namespace": "Plugin_Boilerplate",
-        "prefix": "plugin_boilerplate",
-        "slug": "plugin-boilerplate",
-        "name": "Plugin Boilerplate by VNH",
-        "short_name": "Plugin Boilerplate",
+        "namespace": "Geargag_Advanced_Shipping",
+        "prefix": "geargag_advanced_shipping",
+        "slug": "geargag-advanced-shipping",
+        "name": "Geargag Advanced Shipping for WooCommerce",
+        "short_name": "Geargag Advanced Shipping",
         "version": "1.0.0",
-        "tags": "woocommerce, currency, switcher, exchange, currency for woocommerce, multi currency for woocommerce, woocommerce multi currency, woocommerce currency, currency switcher, woocommerce currency, bitcoin",
+        "description": "vnh_name plugin allows your customers to browse products and checkout in multiple currencies. The plugin converts WooCommerce product price, coupons, shipping price, taxes to customer-preferred currency. Customers can select the currency on front-end with widget, currencies bar. Or you can set the plugin to detect currency based on customer’s location, site’s language.",
+        "tags": "woocommerce, shipping",
         "uri": "https://geargag.com",
         "author": "GearGag Team",
         "contributors": "geargag",
@@ -34,7 +35,6 @@
         "license": "GPL-3.0",
         "license_uri": "http://www.opensource.org/licenses/gpl-license.php",
         "copyright": "Copyright (c) 2019, GearGag Group",
-        "description": "vnh_name plugin allows your customers to browse products and checkout in multiple currencies. The plugin converts WooCommerce product price, coupons, shipping price, taxes to customer-preferred currency. Customers can select the currency on front-end with widget, currencies bar. Or you can set the plugin to detect currency based on customer’s location, site’s language.",
         "wc_requires": "3.2.0",
         "wc_tested_up_to": "3.8.0"
     },
@@ -121,5 +121,8 @@
             "path": "./dist/done/**/*.jpg",
             "maxSize": "700 kB"
         }
-    ]
+    ],
+    "dependencies": {
+        "jquery.repeater": "^1.2.1"
+    }
 }
