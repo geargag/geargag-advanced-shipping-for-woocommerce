@@ -21,6 +21,7 @@ defined('WPINC') || die();
 
 use vnh_namespace\admin\Notices;
 use vnh_namespace\settings_page\Settings_Page;
+use vnh_namespace\shipping\Shipping;
 use vnh_namespace\tools\KSES;
 use vnh_namespace\tools\Register_Assets;
 
@@ -32,6 +33,7 @@ final class Plugin {
 	public $admin_notices;
 	public $frontend_assets;
 	public $backend_assets;
+	public $shipping;
 
 	public function __construct() {
 		$this->load();
@@ -62,6 +64,9 @@ final class Plugin {
 		if (!is_woocommerce_active()) {
 			return;
 		}
+
+		$this->shipping = new Shipping();
+		$this->shipping->boot();
 	}
 
 	public function register_assets() {
@@ -81,8 +86,8 @@ final class Plugin {
 			],
 			'scripts' => [
 				PLUGIN_SLUG . '-settings-page' => [
-					'src' => get_plugin_url('assets/js/settings-page.js'),
-					'deps' => ['jquery', 'jquery-form'],
+					'src' => get_plugin_url('assets/js/dist/settings_page.js'),
+					'deps' => ['jquery', 'jquery-form', 'jquery-ui-sortable'],
 					'localize_script' => [
 						'settingsPage' => [
 							'saveMessage' => esc_html__('Settings Saved Successfully', 'vnh_textdomain'),
@@ -104,7 +109,7 @@ final class Plugin {
 	}
 
 	public function enqueue_backend_assets() {
-		if (is_plugin_settings_page()) {
+		if (is_admin()) {
 			wp_enqueue_style(PLUGIN_SLUG . '-settings-page');
 			wp_enqueue_script(PLUGIN_SLUG . '-settings-page');
 		}
