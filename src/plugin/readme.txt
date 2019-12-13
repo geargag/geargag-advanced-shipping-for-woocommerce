@@ -10,48 +10,35 @@ Requires PHP: vnh_php_requires
 License: vnh_license
 License URI: vnh_license_uri
 
+vnh_short_name is an plugin which allows you to set up advanced shipping conditions.
+
 == Description ==
 
 vnh_description
-
-== Screenshots ==
-
-1. Hero block with settings
-2. Google Map block with settings
 
 == Installation ==
 
 1. In your admin panel, go to Plugins -> Add New.
 2. Type `vnh_name` in the search form and press the 'Enter' key on your keyboard.
 3. Click on the `Activate` button to activate the plugin.
-3. So you done and you can start sync products form GearGag Platform to your Woocommerce site.
 
 == Frequently Asked Questions ==
 
-= How do I start using Gutenberg? =
-To get the full experience of the next-generation WordPress block editor, you'll need a Gutenberg-ready WordPress theme then install the [Gutenberg](https://wordpress.org/plugins/gutenberg/) WordPress plugin or simply update your site to Wordpress 5.0. That's it! 💥
+= What is Method Title? =
+Name of shipping method displayed to customers. For example, 1st Class and 2nd Class, if there are two methods for a zone.
 
-= Can Master Blocks be used with any theme? =
-Yes, you can use Master Blocks with any theme.
+= What is Handling Fee? =
+Additional fee. Can be a fixed amount (2.50) or leave blank for no handling fee.
 
-= Is Master Blocks free? =
-Yes! Master Blocks' core features are absolutely free.
+= What is Maximum Shipping Cost? =
+Can assign a maximum cost to a method. For example, if the total calculated is greater than the maximum cost, the price is decreased to maximum cost amount.
 
-= Where can I ask for help? =
-Please reach out via the official [support forum on WordPress.org](https://wordpress.org/support/plugin/master-blocks/).
+= What is Calculation Type? =
+Tells plugin how to calculate shipping on customer’s cart. Choices are:
+ * Per order: calculates shipping for the entire cart. If there are varying shipping classes in the customer’s cart, the class with the highest priority will be used. These can be set in the table that appears underneath the rate table when per order is selected.
+ * Calculated rates per item: calculates the rate by checking each item in the customer’s basket against the table of rates.
 
 == Changelog ==
 
-= 1.0.4, December 10, 2018 =
-* Still fix Freemius
-
-= 1.0.3, December 10, 2018 =
-* Fix Freemius
-* Minor css fix in setting page
-
-= 1.0.2, December 09, 2018 =
-* Update textdomain
-* Update setting page
-
-= 1.0.0, December 06, 2018 =
+= 1.0.0, December 13, 2019 =
 * Initial release on WordPress.org. Enjoy! 🎉
