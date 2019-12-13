@@ -1,13 +1,15 @@
 # Frequently Asked Questions #
 
-## How do I start using Gutenberg? ##
-To get the full experience of the next-generation WordPress block editor, you'll need a Gutenberg-ready WordPress theme then install the [Gutenberg](https://wordpress.org/plugins/gutenberg/) WordPress plugin or simply update your site to Wordpress 5.0. That's it! 💥
+## What is Method Title? ##
+Name of shipping method displayed to customers. For example, 1st Class and 2nd Class, if there are two methods for a zone.
 
-## Can Master Blocks be used with any theme? ##
-Yes, you can use Master Blocks with any theme.
+## What is Handling Fee? ##
+Additional fee. Can be a fixed amount (2.50) or leave blank for no handling fee.
 
-## Is Master Blocks free? ##
-Yes! Master Blocks' core features are absolutely free.
+## What is Maximum Shipping Cost? ##
+Can assign a maximum cost to a method. For example, if the total calculated is greater than the maximum cost, the price is decreased to maximum cost amount.
 
-## Where can I ask for help? ##
-Please reach out via the official [support forum on WordPress.org](https://wordpress.org/support/plugin/master-blocks/).
+## What is Calculation Type? ##
+Tells plugin how to calculate shipping on customer’s cart. Choices are:
+ * Per order: calculates shipping for the entire cart. If there are varying shipping classes in the customer’s cart, the class with the highest priority will be used. These can be set in the table that appears underneath the rate table when per order is selected.
+ * Calculated rates per item: calculates the rate by checking each item in the customer’s basket against the table of rates.
