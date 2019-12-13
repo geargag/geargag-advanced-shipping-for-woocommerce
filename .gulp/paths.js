@@ -5,7 +5,7 @@ const paths = {
 			generate: "src/plugin/assets/scss/*.scss",
 		},
 		files: ["src/plugin/assets/css/*.css", "src/plugin/assets/js/*.js", "src/plugin/**/*.php"],
-		build: ["src/plugin/**", "!src/plugin/**/*.scss", "!src/plugin/assets/js/src/**"],
+		build: ["src/plugin/**", "!src/plugin/**/*.scss", "!src/plugin/assets/js/settings_page/**"],
 	},
 };
 

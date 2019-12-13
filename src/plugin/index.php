@@ -20,7 +20,6 @@ namespace vnh_namespace;
 defined('WPINC') || die();
 
 use vnh_namespace\admin\Notices;
-use vnh_namespace\settings_page\Settings_Page;
 use vnh_namespace\shipping\Shipping;
 use vnh_namespace\tools\KSES;
 use vnh_namespace\tools\Register_Assets;
@@ -29,9 +28,7 @@ const PLUGIN_FILE = __FILE__;
 const PLUGIN_DIR = __DIR__;
 
 final class Plugin {
-	public $settings_page;
 	public $admin_notices;
-	public $frontend_assets;
 	public $backend_assets;
 	public $shipping;
 
@@ -53,10 +50,6 @@ final class Plugin {
 		if (is_admin()) {
 			$this->admin_notices = new Notices();
 			$this->admin_notices->boot();
-
-			$this->settings_page = new Settings_Page();
-			$this->settings_page->init();
-			$this->settings_page->boot();
 		}
 	}
 
@@ -72,9 +65,6 @@ final class Plugin {
 	public function register_assets() {
 		$this->backend_assets = new Register_Assets($this->register_backend_assets(), 'backend');
 		$this->backend_assets->boot();
-
-		//$this->frontend_assets = new Register_Assets($this->register_frontend_assets(), 'frontend');
-		//$this->frontend_assets->boot();
 	}
 
 	public function register_backend_assets() {
@@ -87,7 +77,7 @@ final class Plugin {
 			'scripts' => [
 				PLUGIN_SLUG . '-settings-page' => [
 					'src' => get_plugin_url('assets/js/dist/settings_page.js'),
-					'deps' => ['jquery', 'jquery-form', 'jquery-ui-sortable'],
+					'deps' => ['jquery', 'jquery-form'],
 					'localize_script' => [
 						'settingsPage' => [
 							'saveMessage' => esc_html__('Settings Saved Successfully', 'vnh_textdomain'),
@@ -101,7 +91,6 @@ final class Plugin {
 	public function boot() {
 		add_action('plugin_loaded', [$this, 'load_plugin_textdomain']);
 		add_action('admin_enqueue_scripts', [$this, 'enqueue_backend_assets']);
-		//add_action('wp_enqueue_scripts', [$this, 'enqueue_frontend_assets']);
 	}
 
 	public function load_plugin_textdomain() {

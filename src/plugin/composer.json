@@ -4,8 +4,5 @@
         "psr-4": {
             "vnh_namespace\\": "."
         }
-    },
-    "require": {
-        "collizo4sky/persist-admin-notices-dismissal": "^1.4"
     }
 }
