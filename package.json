@@ -19,7 +19,7 @@
         "slug": "geargag-advanced-shipping-for-woocommerce",
         "name": "Geargag Advanced Shipping for WooCommerce",
         "short_name": "Geargag Advanced Shipping",
-        "version": "1.0.0",
+        "version": "1.0.4",
         "description": "vnh_short_name plugin you can setup your own advanced rules to determine when a shipping rate should be available for the customer. This plugin will give you full control over your WooCommerce shipping rates. Within each shipping rate you can create multiple 'OR' condition groups. This means that it is very easy to setup a shipping rate for multiple user roles in one shipping rate for example.",
         "tags": "woocommerce shipping, woocommerce, shipping, woocommerce free shipping, woocommerce free, woocommerce advanced free shipping, wc free shipping, wc shipping, advanced shipping, pro shipping, table rate shipping, country shipping, free shipping",
         "uri": "https://geargag.com",
