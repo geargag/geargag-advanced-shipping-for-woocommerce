@@ -40,5 +40,5 @@ Tells plugin how to calculate shipping on customer’s cart. Choices are:
 
 == Changelog ==
 
-= 1.0.0, December 13, 2019 =
+= 1.0.0, December 14, 2019 =
 * Initial release on WordPress.org. Enjoy! 🎉
