@@ -63,7 +63,7 @@ abstract class Shipping_Base extends WC_Shipping_Method implements Initable, Boo
 			);
 		}
 
-		$html .= '<th>Delete</th>';
+		$html .= sprintf('<th>%s</th>', __('Action', 'vnh_textdomain'));
 		$html .= '</tr></thead>';
 		$html .= sprintf('<tbody data-repeater-list="%s">', $field_key);
 		if (!empty($this->get_option($key))) {
