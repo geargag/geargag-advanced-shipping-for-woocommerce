@@ -16,7 +16,7 @@
     "plugin": {
         "namespace": "Geargag_Advanced_Shipping",
         "prefix": "geargag_advanced_shipping",
-        "slug": "geargag-advanced-shipping",
+        "slug": "geargag-advanced-shipping-for-woocommerce",
         "name": "Geargag Advanced Shipping for WooCommerce",
         "short_name": "Geargag Advanced Shipping",
         "version": "1.0.0",
